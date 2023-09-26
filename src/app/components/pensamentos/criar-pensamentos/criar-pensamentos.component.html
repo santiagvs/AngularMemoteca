@@ -10,7 +10,7 @@
       id="pensamento"
       name="pensamento"
       placeholder="Digite o pensamento"
-      value="{{ pensamento.conteudo }}"
+      [(ngModel)]="pensamento.conteudo"
     >
     <label for="autoria"></label>
     <input
@@ -19,7 +19,7 @@
       id="autoria"
       name="autoria"
       placeholder="Digite o autoria ou fonte"
-      [value]="pensamento.autoria"
+      [(ngModel)]="pensamento.autoria"
     >
 
     <label for="modelo">Selecione o modelo do card:</label>
@@ -29,7 +29,7 @@
           <input type="radio"
             name="modelo-card"
             id="modelo1"
-            value="modelo1"
+            [(ngModel)]="pensamento.modelo"
           >
           <div class="custom-radio">
             <span></span>
@@ -48,12 +48,12 @@
           <input type="radio"
             name="modelo-card"
             id="modelo2"
-            value="modelo2"
+            [(ngModel)]="pensamento.modelo"
           >
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 1</span>
+          <span>Modelo 2</span>
         </label>
         Prévia:
         <div class="modelo modelo2 ff-roboto-mono">
@@ -67,12 +67,12 @@
           <input type="radio"
             name="modelo-card"
             id="modelo3"
-            value="modelo3"
+            [(ngModel)]="pensamento.modelo"
           >
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 1</span>
+          <span>Modelo 3</span>
         </label>
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
@@ -81,6 +81,10 @@
           <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
+    </div>
+    <div class="acoes">
+      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button (click)="cancelarCriacao()" class="botao">Cancelar</button>
     </div>
   </form>
 </section>
