@@ -1,0 +1,22 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Que bom que você veio",
+      "autoria": "Nay",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Ih fi o cara tomou um petardo e foi de F",
+      "autoria": "Michael",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 3,
+      "conteudo": "Angular é bom demais, será que presta com Rails?",
+      "autoria": "Danilo",
+      "modelo": "modelo2"
+    }
+  ]
+}
